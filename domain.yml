@@ -1,0 +1,60 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - Book_a_flight
+  - Book_a_hotel
+  - find_activities
+  - Get_weather_forecast
+  - Get_currency_exchange_rate
+  - search_restaurant
+
+actions:
+ - action_search_restaurant
+
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_Book_a_flight:
+  - text: "ok lets book it from www.makemytrip.com"
+
+  utter_Book_a_hotel:
+  - text: "www.agoda.com"
+
+  utter_find_activities:
+  - text: "Here are some popular activities in Rome the Colosseum the Roman Forum and the Vatican City"
+
+  utter_Get_weather_forecast:
+  - text: "The weather in New York today is sunny with a high of 75 degrees Fahrenheit."
+
+  utter_Get_currency_exchange_rate:
+  - text: "100 USD is equal to 84 EUR."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
